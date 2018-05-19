@@ -2,6 +2,9 @@ require './binary-search-tree.rb'
 require './linked-list.rb'
 require './stack.rb'
 require './queue.rb'
+require './check_permutation_two_strings.rb'
+require './are_chars_unique_in_string.rb'
+
 
 puts "\n\n********BST TEST******* (^:"
 
@@ -198,3 +201,15 @@ numbersQueue.enqueue(33)
 
 puts numbersQueue.min
 puts numbersQueue.max
+
+puts "~~~~~~isUnique tests~~~~~~"
+
+puts "is dog unique? #{isUnique("dog")}"
+puts "is puppy unique? #{isUnique("puppy")}"
+
+puts "~~~~~~~checkPermutation tests~~~~~~"
+puts "is tac a permutation of cat? #{checkPermutation("cat", "tac")}"
+puts "is dog a permutation of cat? #{checkPermutation("cat", "dog")}"
+puts "is crisco a permutation of cat? #{checkPermutation("cat", "crisco")}"
+
+
