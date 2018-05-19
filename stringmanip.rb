@@ -1,9 +1,12 @@
 #prints all permutations of a string
 # @param string, left index (starting at 0), right (last index of str)
 # @returns prints all permutations
-# Time Complexity: O(n*n!)
+# Time Complexity: O(n*n
+# test: permute("MAN", 0, 2) => MAN, MNA, AMN, ANM, NAM, NMA
 
-def permute(string, left, right)
+def permute(string, left = nil, right = nil)
+  left = 0 if !left
+  right = string.length - 1 if !right
   if (left == right)
   # ouput string
     puts string
