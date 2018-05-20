@@ -4,6 +4,7 @@ require './stack.rb'
 require './queue.rb'
 require './check_permutation_two_strings.rb'
 require './are_chars_unique_in_string.rb'
+require './urlify.rb'
 
 
 puts "\n\n********BST TEST******* (^:"
@@ -202,6 +203,7 @@ numbersQueue.enqueue(33)
 puts numbersQueue.min
 puts numbersQueue.max
 
+##### STRING MANIPULATION 
 puts "~~~~~~isUnique tests~~~~~~"
 
 puts "is dog unique? #{isUnique("dog")}"
@@ -211,5 +213,11 @@ puts "~~~~~~~checkPermutation tests~~~~~~"
 puts "is tac a permutation of cat? #{checkPermutation("cat", "tac")}"
 puts "is dog a permutation of cat? #{checkPermutation("cat", "dog")}"
 puts "is crisco a permutation of cat? #{checkPermutation("cat", "crisco")}"
+
+puts "~~~~~Urlify tests~~~~"
+puts "mr john smith   => #{urlify("mr john smith   ")}"
+puts "extra     sp   aa ces    s   => #{urlify("extra     sp   aa ces    s   ")}"
+puts "   => #{urlify("   ")}"
+puts "mrjohnsmith => #{urlify("mrjohnsmith")}"
 
 
